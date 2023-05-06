@@ -1,0 +1,9 @@
+package ma.enset.customersservice.repositories;
+
+import ma.enset.customersservice.entities.Customer;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.rest.webmvc.RepositoryRestController;
+
+@RepositoryRestController
+public interface CustomersRepository extends JpaRepository<Customer, Long> {
+}
